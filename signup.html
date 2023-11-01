@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <title>VaniSamparka</title>
+</head>
+
+<body class="vh-100 overflow-hidden">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+            <!--Logo-->
+            <img src="VaniSamparka-2.png" href="index.html" width="30" height="30">
+          <a class="navbar-brand fs-4" href="index.html">VaniSamparka</a>
+          
+
+          <!--Toggle btn-->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Side bar-->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!--Sidebar Header-->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!--Sidebar Body-->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                
+              </ul>
+              <!--Login / Signup-->
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center  gap-3">
+                <a href="login.html" class="text-white">Login</a>
+                <a href="signup.html" class="text-white text-decoration-none px-3 py-1 bg-primary rounded-4"
+                style="background-color: #f94ca4;">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+        <section class="w-80 vh-150 d-flex flex-column justify-content-center align-items-center text-white">
+            <form action="/action_page.php" style="border:1px solid #ccc">
+                <div class="container">
+                  <h1 >Sign Up</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+                  
+                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+                  <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+        </section>
+    </main>
+      
+      
+</body>
+</html>
